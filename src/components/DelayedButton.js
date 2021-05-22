@@ -7,10 +7,7 @@ export default class DelayedButton extends Component {
         event.persist();
         const delaying = this.props.delay
 
-        window.setTimeout(() => {
-            this.props.onDelayedClick(event)
-        }, delaying)
-    }
+        window.setTimeout(() => {this.props.onDelayedClick(event)}, delaying)}
 
     render(props){
         return (
